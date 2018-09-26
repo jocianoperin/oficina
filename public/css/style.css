@@ -1,0 +1,59 @@
+body {
+    margin: 0
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    outline: none
+}
+
+A:link {
+    text-decoration: none
+}
+
+A:visited {
+    text-decoration: none
+}
+
+A:active {
+    text-decoration: none
+}
+
+A:hover {
+    text-decoration: none
+}
+
+::selection {
+    color: #FFF;
+    background-color: #FF7E00
+}
+
+::-moz-selection {
+    color: #FFF;
+    background-color: #FF7E00
+}
+
+
+/*----------- CONFIGURA��ES SM E MD ------------*/
+@media (min-width: 767px) and (max-width: 1200px) {
+
+}
+
+/*----------- CONFIGURA��ES SM------------*/
+@media (min-width: 767px) and (max-width: 992px) {
+
+
+}
+
+/*----------- CONFIGURA��ES XS ------------*/
+@media (max-width: 767px) {
+
+}
+
+
+*[data-src], *[href] {
+    cursor: pointer;
+}
