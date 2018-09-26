@@ -17,7 +17,6 @@
 
     <!-- Header -->
     <div id="header">
-
         <!-- Logo -->
 
         <h1><a href="/" id="logo"><img src="http://www.utfpr.edu.br/logo.png"
