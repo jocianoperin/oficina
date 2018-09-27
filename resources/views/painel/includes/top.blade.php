@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url('/painel') }}">Laravel</a>
+            <a class="navbar-brand" href="{{ url('/') }}">Home</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -18,8 +18,23 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-expanded="false">Usuários <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/painel/usuarios') }}">Listar</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/usuarios') }}">Listar</a></li>
+
                             <li><a href="{{ url('/painel/usuarios/create') }}">Adicionar</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">Notícias <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-item" href="{{ url('/painel/usuarios') }}">Listar</a></li>
+
+                            <li><a href="{{ url('/painel/usuarios/create') }}">Adicionar</a></li>
+
+
                         </ul>
                     </li>
                 @endif

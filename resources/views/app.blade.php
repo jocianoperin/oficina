@@ -7,7 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" href="{{asset("css/main.css")}}">
-	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'/>
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="{{asset("bootstrap/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
@@ -24,7 +24,7 @@
 <!-- Bootstrap 3.3.5 -->
 <!-- Scripts -->
 <script src="{{asset("bootstrap/js/bootstrap.min.js")}}"></script>
-<script src="{{asset("bootstrap/js/jquery.js")}}"></script>
+{{--<script src="{{asset("bootstrap/js/jquery.js")}}"></script>--}}
 <script src="{{asset("bootstrap/js/jquery.dropotron.min.js")}}"></script>
 <script src="{{asset("bootstrap/js/browser.min.js")}}"></script>
 <script src="{{asset("bootstrap/js/breakpoints.min.js")}}"></script>
