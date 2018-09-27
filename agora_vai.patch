@@ -1,0 +1,63 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1538021333000)
++++ .idea/workspace.xml	(date 1538022404050)
+@@ -134,8 +134,8 @@
+       <file leaf-file-name="top.blade.php" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/resources/views/painel/includes/top.blade.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="124">
+-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
++            <state relative-caret-position="33">
++              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+             </state>
+           </provider>
+         </entry>
+@@ -406,7 +406,7 @@
+       <workItem from="1537915364511" duration="5525000" />
+       <workItem from="1537921780344" duration="446000" />
+       <workItem from="1538000258011" duration="307000" />
+-      <workItem from="1538000949066" duration="11684000" />
++      <workItem from="1538000949066" duration="12555000" />
+     </task>
+     <task id="LOCAL-00001" summary="criado nivel de acesso">
+       <created>1538020204544</created>
+@@ -422,15 +422,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1538020420022</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="criado nivel de acesso">
++      <created>1538021333695</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1538021333695</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="26014000" />
++    <option name="totallyTimeSpent" value="26885000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+-    <editor active="true" />
+     <layout>
+       <window_info anchor="bottom" id="TODO" order="6" />
+       <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
+@@ -773,8 +779,8 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/resources/views/painel/includes/top.blade.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="124">
+-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
++        <state relative-caret-position="33">
++          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+         </state>
+       </provider>
+     </entry>
