@@ -133,6 +133,9 @@
                             <div class="col-6 col-12-mobilep">
                                 <input type="email" name="email" id="email" placeholder="Email" />
                             </div>
+                            <div class="col-6 col-12-mobilep">
+                                <input type="email" name="email" id="email" placeholder="Assunto" />
+                            </div>
                             <div class="col-12">
                                 <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
                             </div>
