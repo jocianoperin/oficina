@@ -36,6 +36,7 @@
                     <a href="#">Acessar</a>
                     <ul>
 
+
                         <li><a href="{{url('/painel')}}"><i class="fa fa-user-o" aria-hidden="true"></i> Login </a></li>
                         <li><a href="{{url('/auth/register')}}"><i class="fa fa-gear" aria-hidden="true"></i> Registrar</a></li>
 
@@ -62,26 +63,23 @@
             <div class="row gtr-200">
                 <section class="col-4 col-12-narrower">
                     <div class="box highlight">
-                        <i class="icon major fa-paper-plane"></i>
-                        <h3>This Is Important</h3>
-                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-                            rutrum accumsan sed. Suspendisse eu.</p>
+                        <i class="icon major fa-bullhorn"></i>
+                        <h3>Destaques</h3>
+                        <p>Nessa parte do site será exibida todos os destaques em evidencia na programação dos festival cultural.</p>
                     </div>
                 </section>
                 <section class="col-4 col-12-narrower">
                     <div class="box highlight">
                         <i class="icon major fa-pencil"></i>
-                        <h3>Also Important</h3>
-                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-                            rutrum accumsan sed. Suspendisse eu.</p>
+                        <h3>Inscrições</h3>
+                        <p>Pagina destinada a inscrição em algum concurso ou evento que esteja programado .</p>
                     </div>
                 </section>
                 <section class="col-4 col-12-narrower">
                     <div class="box highlight">
-                        <i class="icon major fa-wrench"></i>
-                        <h3>Probably Important</h3>
-                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a
-                            rutrum accumsan sed. Suspendisse eu.</p>
+                        <i class="icon major fa-calendar"></i>
+                        <h3>Calendario de Eventos</h3>
+                        <p>Mostra o calendario dos eventos, e datas importantes para serem acompanhadas.</p>
                     </div>
                 </section>
             </div>
