@@ -134,8 +134,8 @@
       <file leaf-file-name="top.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/painel/includes/top.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="88">
+              <caret line="32" column="109" lean-forward="true" selection-start-line="32" selection-start-column="109" selection-end-line="32" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -269,7 +269,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/log" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -347,7 +347,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -406,7 +406,7 @@
       <workItem from="1537921780344" duration="446000" />
       <workItem from="1538000258011" duration="307000" />
       <workItem from="1538000949066" duration="12555000" />
-      <workItem from="1538022361670" duration="1726000" />
+      <workItem from="1538022361670" duration="3114000" />
     </task>
     <task id="LOCAL-00001" summary="criado nivel de acesso">
       <created>1538020204544</created>
@@ -450,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538022887555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="agora vai">
+      <created>1538024235875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538024235875</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28611000" />
+    <option name="totallyTimeSpent" value="29999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -779,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/painel/includes/top.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="88">
+          <caret line="32" column="109" lean-forward="true" selection-start-line="32" selection-start-column="109" selection-end-line="32" selection-end-column="109" />
         </state>
       </provider>
     </entry>
