@@ -125,7 +125,7 @@
                 </section>
                 <section class="col-6 col-12-narrower">
                     <h3>Get In Touch</h3>
-                    <form>
+                    <form action="/contato/create" method="post">
                         <div class="row gtr-50">
                             <div class="col-6 col-12-mobilep">
                                 <input type="text" name="name" id="name" placeholder="Name" />

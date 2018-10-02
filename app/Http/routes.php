@@ -26,4 +26,13 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
         Route::get('destroy', 'UsuariosController@destroy');
     });
 
+    Route::group(['prefix' => 'contato'], function () {
+        Route::get('/', 'ContatosController@index');
+        Route::get('create', 'ContatosController@create');
+        Route::post('create', 'ContatosController@create2');
+        Route::get('update', 'ContatosController@update');
+        Route::post('update', 'ContatosController@update2');
+        Route::get('destroy', 'ContatosController@destroy');
+    });
+
 });
