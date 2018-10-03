@@ -5,7 +5,7 @@ use Input;
 use Hash;
 use Auth;
 
-class ContatosController extends Controller
+class ContatoController extends Controller
 {
 
     public function __construct()
@@ -30,8 +30,8 @@ class ContatosController extends Controller
 
         $create->name = Input::get('name');
         $create->email = Input::get('email');
-        $create->object = Hash::make(Input::get('object'));
-        $create->message = Hash::make(Input::get('message'));
+        $create->object = Input::get('object');
+        $create->message = Input::get('message');
 
         $create->save();
 

@@ -6,6 +6,8 @@ Route::get('/home', 'SiteController@index');
 Route::get('/noticias', 'SiteController@noticias');
 Route::get('/eventos', 'SiteController@eventos');
 Route::get('/about', 'SiteController@about');
+Route::get('/contato', 'SiteController@contato');
+Route::post('/contato', 'SiteController@contato2');
 
 
 Route::controllers([

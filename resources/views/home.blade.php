@@ -42,6 +42,7 @@
 
                     </ul>
                 </li>
+                <li><a href="contato">Contato</a></li>
 
 
             </ul>
