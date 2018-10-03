@@ -126,6 +126,7 @@
                 <section class="col-6 col-12-narrower">
                     <h3>Get In Touch</h3>
                     <form action="/contato/create" method="post">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <div class="row gtr-50">
                             <div class="col-6 col-12-mobilep">
                                 <input type="text" name="name" id="name" placeholder="Name" />
@@ -134,7 +135,7 @@
                                 <input type="email" name="email" id="email" placeholder="Email" />
                             </div>
                             <div class="col-6 col-12-mobilep">
-                                <input type="email" name="email" id="email" placeholder="Assunto" />
+                                <input type="text" name="object" id="object" placeholder="Assunto" />
                             </div>
                             <div class="col-12">
                                 <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
