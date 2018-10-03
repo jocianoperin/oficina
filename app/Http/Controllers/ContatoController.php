@@ -37,7 +37,7 @@ class ContatoController extends Controller
 
         Mail::send('emails.contato', compact('create'), function ($message) use ($create) {
 
-            $message->to('comissaoculturautfpr@gmail.com')->subject('Contato vindo do site!');
+            $message->to('perinjociano@gmail.com')->subject('Contato vindo do site!');
         });
 
         return redirect('painel/contato')->with('success', 'Registro adicionado com sucesso!');

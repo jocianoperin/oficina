@@ -48,17 +48,17 @@ class SiteController extends Controller
 
         $create->name = Input::get('name');
         $create->email = Input::get('email');
-        $create->object = Hash::make(Input::get('object'));
-        $create->message = Hash::make(Input::get('message'));
+        $create->object = Input::get('object');
+        $create->message = Input::get('message');
 
         $create->save();
 
         Mail::send('emails.contato', compact('create'), function ($message) use ($create) {
 
-            $message->to('comissaoculturautfpr@gmail.com')->subject('Contato vindo do site!');
+            $message->from('comissaoculturautfpr@gmail.com')->to('comissaoculturautfpr@gmail.com')->subject('Contato vindo do site!');
         });
 
-        return redirect('painel/contato')->with('success', 'Registro adicionado com sucesso!');
+        return redirect('/contato')->with('success', 'Registro adicionado com sucesso!');
     }
 
 }

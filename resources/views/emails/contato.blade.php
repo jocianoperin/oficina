@@ -1,4 +1,4 @@
 <p>Nome: {{$create->name}}</p>
-<p>Nome: {{$create->email}}</p>
-<p>Nome: {{$create->object}}</p>
-<p>Nome: {{$create->message}}</p>
+<p>E-mail: {{$create->email}}</p>
+<p>Assunto: {{$create->object}}</p>
+<p>Mensagem: {{$create->message}}</p>
