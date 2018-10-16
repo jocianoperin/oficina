@@ -34,7 +34,19 @@
                 <li>
                     <a href="noticias">Noticias</a>
                 <li><a href="eventos">Eventos</a></li>
-                <li class="current"><a href="about">Sobre</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li>
+                    <a href="#">Acessar</a>
+                    <ul>
+
+
+                        <li><a href="{{url('/painel')}}"><i class="fa fa-user-o" aria-hidden="true"></i> Login </a></li>
+                        <li><a href="{{url('/auth/register')}}"><i class="fa fa-gear" aria-hidden="true"></i> Registrar</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="current"><a href="contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -46,25 +58,25 @@
         <div class="container">
             <div class="row">
                 <section class="col-6 col-12-narrower">
-                    <h3>Get In Touch</h3>
+                    <h3>Envie sua mensagem</h3>
                     <form action="/contato" method="post">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <div class="row gtr-50">
                             <div class="col-6 col-12-mobilep">
-                                <input type="text" name="name" id="name" placeholder="Name"/>
+                                <input type="text" name="name" id="name" placeholder="Nome"/>
                             </div>
                             <div class="col-6 col-12-mobilep">
                                 <input type="email" name="email" id="email" placeholder="Email"/>
                             </div>
-                            <div class="col-6 col-12-mobilep">
+                            <div class="col-12 col-12-mobilep">
                                 <input type="text" name="object" id="object" placeholder="Assunto"/>
                             </div>
                             <div class="col-12">
-                                <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                                <textarea name="message" id="message" placeholder="Mensagem" rows="5"></textarea>
                             </div>
                             <div class="col-12">
                                 <ul class="actions">
-                                    <li><input type="submit" class="button alt" value="Send Message"/></li>
+                                    <li><input type="submit" class="button alt" value="Enviar mensagem"/></li>
                                 </ul>
                             </div>
                         </div>

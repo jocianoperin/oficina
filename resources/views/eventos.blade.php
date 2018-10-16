@@ -30,8 +30,20 @@
                 <li><a href="/">Home</a></li>
                 <li>
                     <a href="noticias">Noticias</a>
-                <li><a href="eventos">Eventos</a></li>
+                <li class="current"><a href="eventos">Eventos</a></li>
                 <li><a href="about">Sobre</a></li>
+                <li>
+                    <a href="#">Acessar</a>
+                    <ul>
+
+
+                        <li><a href="{{url('/painel')}}"><i class="fa fa-user-o" aria-hidden="true"></i> Login </a></li>
+                        <li><a href="{{url('/auth/register')}}"><i class="fa fa-gear" aria-hidden="true"></i> Registrar</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
 

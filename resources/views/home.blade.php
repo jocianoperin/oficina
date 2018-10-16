@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-<!DOCTYPE HTML>
+        <!DOCTYPE HTML>
 <!--
 	Arcana by HTML5 UP
 	html5up.net | @ajlkn
@@ -20,9 +20,9 @@
         <!-- Logo -->
 
         <h1><a href="/" id="logo"><img src="http://www.utfpr.edu.br/logo.png"
-                                                alt="Universidade Tecnológica Federal do Paraná"
-                                                title="Universidade Tecnológica Federal do Paraná" height="59"
-                                                width="379"></a></h1>
+                                       alt="Universidade Tecnológica Federal do Paraná"
+                                       title="Universidade Tecnológica Federal do Paraná" height="59"
+                                       width="379"></a></h1>
 
         <!-- Nav -->
         <nav id="nav">
@@ -38,7 +38,8 @@
 
 
                         <li><a href="{{url('/painel')}}"><i class="fa fa-user-o" aria-hidden="true"></i> Login </a></li>
-                        <li><a href="{{url('/auth/register')}}"><i class="fa fa-gear" aria-hidden="true"></i> Registrar</a></li>
+                        <li><a href="{{url('/auth/register')}}"><i class="fa fa-gear" aria-hidden="true"></i> Registrar</a>
+                        </li>
 
                     </ul>
                 </li>
@@ -66,7 +67,8 @@
                     <div class="box highlight">
                         <i class="icon major fa-bullhorn"></i>
                         <h3>Destaques</h3>
-                        <p>Nessa parte do site será exibida todos os destaques em evidencia na programação dos festival cultural.</p>
+                        <p>Nessa parte do site será exibida todos os destaques em evidencia na programação dos festival
+                            cultural.</p>
                     </div>
                 </section>
                 <section class="col-4 col-12-narrower">
@@ -190,7 +192,8 @@
 
         <!-- Icons -->
         <ul class="icons">
-            <li><a href="https://www.facebook.com/utfprdoisvizinhos/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.facebook.com/utfprdoisvizinhos/" class="icon fa-facebook"><span class="label">Facebook</span></a>
+            </li>
         </ul>
 
         <!-- Copyright -->
