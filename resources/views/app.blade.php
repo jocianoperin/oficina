@@ -8,6 +8,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" href="{{asset("css/main.css")}}">
 	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'/>
+    <link rel="icon" href="{{asset('imagens/icone.ico')}}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{asset('imagens/icone.ico')}}" type="image/x-icon" />
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="{{asset("bootstrap/css/bootstrap.min.css")}}">
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
@@ -16,7 +18,7 @@
 </head>
 <body>
 
-{{--@include("includes.top")--}}
+
 @yield('content')
 
 <!-- jQuery 2.1.4 -->

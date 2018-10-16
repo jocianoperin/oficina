@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\Sobre;
+
 class SiteController extends Controller
 {
 
@@ -33,17 +35,18 @@ class SiteController extends Controller
 
     public function noticias()
     {
-        return view('noticias');
+        return view('noticias.index');
     }
 
     public function eventos()
     {
-        return view('eventos');
+        return view('eventos.index');
     }
 
-    public function about()
+    public function sobre()
     {
-        return view('about');
+        $sobre = Sobre::find(1);
+        return view('sobre.index', compact('sobre'));
     }
 
 }

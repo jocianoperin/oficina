@@ -2515,17 +2515,17 @@ button.small,
 
 #header {
 	text-align: center;
-	padding: 3em 0 0 0;
+	padding: 0 0 0 0;
 	background-color: #fff;
 	background-image: url("../imgs/bg02.png"), url("../imgs/bg02.png"), url("../imgs/bg01.png");
-	background-position: top left,					top left,					top left;
-	background-size: 100% 6em,					100% 6em,					auto;
-	background-repeat: no-repeat,					no-repeat,					repeat;
+	background-position: top left, top left, top left;
+	background-size: 100% 6em, 100% 6em, auto;
+	background-repeat: no-repeat, no-repeat,	repeat;
 }
 
 #header h1 {
 	/*text-align: left;*/
-	padding: 0 0 2.75em 0;
+	padding: 0 0 0 0;
 	margin: 0;
 }
 

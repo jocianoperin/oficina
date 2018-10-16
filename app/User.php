@@ -12,7 +12,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	use Authenticatable, CanResetPassword;
     use SoftDeletes;
 
-	protected $table = 'users';
+	protected $table = 'tusers';
 	protected $primaryKey = 'id';
     protected $dates = ['deleted_at'];
 	
