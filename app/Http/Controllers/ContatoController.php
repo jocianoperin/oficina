@@ -14,9 +14,9 @@ class ContatoController extends Controller
 
     public function index()
     {
-        $itens = Contato::paginate(15);
+//        $itens = Contato::paginate(15);
 
-        return view('painel.contato.index', compact('itens'));
+//        return view('painel.contato.index', compact('itens'));
     }
 
     public function create()
