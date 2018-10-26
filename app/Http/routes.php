@@ -29,12 +29,12 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
     });
 
     Route::group(['prefix' => 'contato'], function () {
-        Route::get('/', 'ContatosController@index');
-        Route::get('create', 'ContatosController@create');
-        Route::post('create', 'ContatosController@create2');
-        Route::get('update', 'ContatosController@update');
-        Route::post('update', 'ContatosController@update2');
-        Route::get('destroy', 'ContatosController@destroy');
+        Route::get('/', 'ContatoController@index');
+        Route::get('create', 'ContatoController@create');
+        Route::post('create', 'ContatoController@create2');
+        Route::get('update', 'ContatoController@update');
+        Route::post('update', 'ContatoController@update2');
+        Route::get('destroy', 'ContatoController@destroy');
     });
 
     Route::group(['prefix' => 'sobre'], function () {

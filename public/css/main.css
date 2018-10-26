@@ -3351,4 +3351,21 @@ button.small,
 		margin-right: 50px;
 	}
 
+	@media (min-width: 576px) {
+		.card-deck {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+	}
+
+
+
+
 }
+
+
+

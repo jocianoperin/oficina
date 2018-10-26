@@ -48,5 +48,9 @@ class SiteController extends Controller
         $sobre = Sobre::find(1);
         return view('sobre.index', compact('sobre'));
     }
+    public function contato()
+    {
 
+        return view('contato.index');
+    }
 }
