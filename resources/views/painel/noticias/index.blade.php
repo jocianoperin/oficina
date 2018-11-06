@@ -28,15 +28,8 @@
                                 <hr class="center-block">
                             </div>
                             <div class="col-md-12">
-                                <form action="{{url('painel/sobre/update?codigo='.$item_sobre->SobCodigo)}}" method="POST">
+                                <form action="{{url('painel/noticias/update?codigo='.$item_sobre->SobCodigo)}}" method="POST">
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-
-                                    <div class="form-group">
-                                        <label for="texto">Presidente:</label>
-                                        <input type="text" class="form-control" name="presidente" value="{{$item_sobre->SobPresidente}}">
-
-                                    </div>
-
                                     <div class="form-group">
                                         <label for="texto">Texto:</label>
                                         <textarea id="texto" class="form-control" name="texto">

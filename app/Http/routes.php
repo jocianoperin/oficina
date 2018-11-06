@@ -44,12 +44,20 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
 
     Route::group(['prefix' => 'eventos'], function () {
         Route::get('/', 'EventosController@index');
-        Route::post('update', 'EventosController@update');
+        Route::get('create', 'EventosController@create');
+        Route::post('create', 'EventosController@create2');
+        Route::get('update', 'EventosController@update');
+        Route::post('update', 'EventosController@update2');
+        Route::get('destroy', 'EventosController@destroy');
     });
 
     Route::group(['prefix' => 'noticias'], function () {
         Route::get('/', 'NoticiasController@index');
-        Route::post('update', 'NoticiasController@update');
+        Route::get('create', 'NoticiasController@create');
+        Route::post('create', 'NoticiasController@create2');
+        Route::get('update', 'NoticiasController@update');
+        Route::post('update', 'NoticiasController@update2');
+        Route::get('destroy', 'NoticiasController@destroy');
     });
 
 });
