@@ -42,4 +42,14 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
         Route::post('update', 'SobreController@update');
     });
 
+    Route::group(['prefix' => 'eventos'], function () {
+        Route::get('/', 'EventosController@index');
+        Route::post('update', 'EventosController@update');
+    });
+
+    Route::group(['prefix' => 'noticias'], function () {
+        Route::get('/', 'NoticiasController@index');
+        Route::post('update', 'NoticiasController@update');
+    });
+
 });

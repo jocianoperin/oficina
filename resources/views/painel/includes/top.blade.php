@@ -19,10 +19,7 @@
                            aria-expanded="false">Usuários <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a class="dropdown-item" href="{{ url('/painel/usuarios') }}"><i class="fa fa-list"></i> Listar</a></li>
-
                             <li><a href="{{ url('/painel/usuarios/create') }}"><i class="fa fa-plus"></i> Adicionar</a></li>
-
-
                         </ul>
                     </li>
 
@@ -31,6 +28,20 @@
                            aria-expanded="false">Página Sobre <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a class="dropdown-item" href="{{ url('/painel/sobre') }}"><i class="fa fa-wrench"></i> Configurações</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">Página Notícias <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-item" href="{{ url('/painel/noticias') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">Página Eventos <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="dropdown-item" href="{{ url('/painel/eventos') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
                         </ul>
                     </li>
                 @endif
