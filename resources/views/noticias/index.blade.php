@@ -18,7 +18,6 @@
         @include("includes.top")
         @include("includes.banner")
 
-
     </div>
 
 
@@ -27,19 +26,23 @@
             <section class="col-12 col-12-narrower">
                 <div class="row">
                     <div class="inner">
-                        <h3>Notícias - Comissão de Cultura da UTFPR-DV</h3>
-                        <p>{{strip_tags($noticias->SobTexto)}}</p>
+                        <h1>Noticias</h1>
+                        @foreach($itens_noticia as $noticia)
+                            <br>
+                            <br>
+
+                            <div class="container-fluid">
+                                <h2>{{strip_tags($noticia->SobTitulo)}}</h2>
+                                <div class="container-fluid">
+                                    {{strip_tags($noticia->SobTexto)}}
+                                </div>
+                            </div>
+
+                        @endforeach
+
+
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="inner">
-                        <h4>Membros: </h4>
-                        <p><strong>Presidente: {{$sobre->SobPresidente}}</strong></p>
-                    </div>
-                </div>
-
-
         </div>
     </div>
     </section>

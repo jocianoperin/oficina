@@ -16,31 +16,31 @@
                 @endif
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Produtos
+                        Notícias
                     </div>
                     <div class="panel-body">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th class="col-sm-1 text-center">#</th>
-                                <th class="col-sm-5">Nome</th>
-                                <th class="col-sm-5">Descrição</th>
+                                <th class="col-sm-5">Id</th>
+                                <th class="col-sm-5">Texto</th>
                                 <th class="col-sm-1 text-center">#</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @if(count(@$itens) > 0)
-                                @foreach($itens as $item)
+                            @if(count(@$itens_noticia) > 0)
+                                @foreach($itens_noticia as $item)
                                     <tr>
                                         <td class="text-center" style="vertical-align: middle;">
-                                            <a href="{{url('painel/produtos/update?id='.$item->codigo)}}" class="btn btn-primary">
+                                            <a href="{{url('painel/noticias/update?id='.$item->SobCodigo)}}" class="btn btn-primary">
                                                 <i class="fa fa-edit"></i>
                                             </a>
                                         </td>
                                         <td style="vertical-align: middle;">{{$item->nome}}</td>
                                         <td style="vertical-align: middle;">{{$item->descricao}}</td>
                                         <td class="text-center" style="vertical-align: middle;">
-                                            <a href="{{url('painel/produtos/destroy?id='.$item->codigo)}}" class="btn btn-danger">
+                                            <a href="{{url('painel/noticias/destroy?id='.$item->SobTexto)}}" class="btn btn-danger">
                                                 <i class="fa fa-remove"></i>
                                             </a>
                                         </td>

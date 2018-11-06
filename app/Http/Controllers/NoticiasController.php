@@ -13,8 +13,9 @@ class NoticiasController extends Controller
 
     public function index()
     {
-        $item_sobre = Noticias::find(1);
-        return view('painel.noticias.index', compact('item_sobre'));
+        $itens_noticia = Noticias::where('SobLiberado', '=', 1)->paginate(15);
+        return view('painel.noticias.index', compact('itens_noticia'));
+
     }
 
 
@@ -23,7 +24,6 @@ class NoticiasController extends Controller
         $update = Noticias::find(Input::get('codigo'));
 
         $update->SobTexto = Input::get('texto');
-        $update->SobPresidente = Input::get('presidente');
 
         $update->save();
 
@@ -35,7 +35,6 @@ class NoticiasController extends Controller
         $create = Noticias::find(Input::get('codigo'));
 
         $create->SobTexto = Input::get('texto');
-        $create->SobPresidente = Input::get('presidente');
 
         $create->save();
 

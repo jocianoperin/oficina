@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Noticias;
 use App\Sobre;
 
 class SiteController extends Controller
@@ -35,7 +36,10 @@ class SiteController extends Controller
 
     public function noticias()
     {
-        return view('noticias.index');
+
+        $itens_noticia = Noticias::where('SobLiberado', '=', 1)->paginate(15);
+        return view('noticias.index', compact('itens_noticia'));
+
     }
 
     public function eventos()

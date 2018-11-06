@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1">
                 @if (session('success'))
                     <div class="alert alert-success">
                         {{ session('success') }}
@@ -14,41 +14,44 @@
                         {{ session('error') }}
                     </div>
                 @endif
-            </div>
-            <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-wrench"></i>
-                        Configurações da Página Noticias
+                        Notícias
                     </div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="header"> <strong>Informações da Página:</strong> </div>
-                                <hr class="center-block">
-                            </div>
-                            <div class="col-md-12">
-                                <form action="{{url('painel/noticias/update?codigo='.$item_sobre->SobCodigo)}}" method="POST">
-                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-                                    <div class="form-group">
-                                        <label for="texto">Texto:</label>
-                                        <textarea id="texto" class="form-control" name="texto">
-                                            @if($item_sobre->SobTexto)
-                                                {{$item_sobre->SobTexto}}
-                                            @endif
-                                        </textarea>
-                                        <script>
-                                            CKEDITOR.replace( 'texto' );
-                                        </script>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i class="fa fa-save">&nbsp;</i>
-                                            Salvar
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="col-sm-1 text-center">#</th>
+                                <th class="col-sm-5">Id</th>
+                                <th class="col-sm-5">Título</th>
+                                <th class="col-sm-1 text-center">#</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @if(count(@$itens_noticia) > 0)
+                                @foreach($itens_noticia as $item)
+                                    <tr>
+                                        <td class="text-center" style="vertical-align: middle;">
+                                            <a href="{{url('painel/noticias/update?id='.$item->SobCodigo)}}" class="btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                        </td>
+                                        <td style="vertical-align: middle;">{{$item->SobCodigo}}</td>
+                                        <td style="vertical-align: middle;">{{$item->SobTitulo}}</td>
+                                        <td class="text-center" style="vertical-align: middle;">
+                                            <a href="{{url('painel/noticias/destroy?id='.$item->SobCodigo)}}" class="btn btn-danger">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            @endif
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        {!! $itens_noticia->render() !!}
                     </div>
                 </div>
             </div>
