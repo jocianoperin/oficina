@@ -54,7 +54,7 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
     Route::group(['prefix' => 'noticias'], function () {
         Route::get('/', 'NoticiasController@index');
         Route::get('create', 'NoticiasController@create');
-        Route::post('create', 'NoticiasController@create2');
+        Route::post('create2', 'NoticiasController@create2');
         Route::get('update', 'NoticiasController@update');
         Route::post('update', 'NoticiasController@update2');
         Route::get('destroy', 'NoticiasController@destroy');

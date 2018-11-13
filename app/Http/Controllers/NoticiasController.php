@@ -8,19 +8,30 @@ class NoticiasController extends Controller
 
     public function __construct()
     {
-
     }
 
     public function index()
     {
-        $itens_noticia = Sobre::find(1);
-        return view('painel.noticias.create', compact('itens_noticia'));
+        $itens_noticia = Noticias::find(1);
+        return view('painel/noticias/index', compact('itens_noticia'));
     }
 
     public function create()
     {
 
         return view('painel.noticias.create');
+    }
+
+
+    public function create2()
+    {
+        $create = new Noticias();
+
+        $create->SobTitulo = Input::get('titulo');
+        $create->SobTexto = Input::get('texto');
+        $create->save();
+
+        return redirect('painel/noticias')->with('success', 'Registro adicionado com sucesso!');
     }
 
     public function update()
@@ -32,7 +43,7 @@ class NoticiasController extends Controller
 
         $update->save();
 
-        return redirect('painel/sobre')->with('success', 'Registro alterado com sucesso!');
+        return redirect('painel/noticias')->with('success', 'Registro alterado com sucesso!');
     }
 
     public function destroy()

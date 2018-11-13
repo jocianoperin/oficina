@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e840b3fb-ea2d-483c-8f02-4e5671642e3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Noticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/painel/includes/top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/includes/top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\Oficina\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,35 +149,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="52feab7d5c145a7a5254eca5e255b2a9" value="1" />
           <entry key="css" value="2" />
           <entry key="env" value="1" />
           <entry key="example" value="1" />
           <entry key="patch" value="1" />
-          <entry key="php" value="106" />
+          <entry key="php" value="110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="58" />
+          <entry key="Blade" value="59" />
           <entry key="CSS" value="2" />
           <entry key="PATCH" value="1" />
-          <entry key="PHP" value="48" />
+          <entry key="PHP" value="51" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="49" />
           <entry key="env" value="16" />
-          <entry key="php" value="2015" />
+          <entry key="php" value="2269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="1274" />
+          <entry key="Blade" value="1406" />
           <entry key="CSS" value="49" />
-          <entry key="PHP" value="741" />
+          <entry key="PHP" value="863" />
         </counts>
       </usages-collector>
     </session>
@@ -189,17 +189,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="e#39#56#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/update.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="228">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#39#52#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -207,8 +213,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
+            <state relative-caret-position="493">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="35" column="42" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="35" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Noticias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -226,10 +259,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="30" column="93" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="93" />
+            <state relative-caret-position="561">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -276,7 +309,6 @@
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/includes/titulo.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/banner.blade.php" />
@@ -290,7 +322,6 @@
         <option value="$PROJECT_DIR$/app/Membros.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MembrosController.php" />
         <option value="$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/painel/produtos/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php" />
@@ -299,9 +330,11 @@
         <option value="$PROJECT_DIR$/resources/views/painel/includes/top.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" />
         <option value="$PROJECT_DIR$/resources/views/noticias/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/painel/noticias/update.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SobreController.php" />
+        <option value="$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/painel/noticias/update.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" />
       </list>
     </option>
@@ -433,13 +466,6 @@
               <item name="Oficina" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="noticias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="painel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -453,18 +479,20 @@
             <path>
               <item name="Oficina" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oficina" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="sobre" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Oficina" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oficina" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="painel" type="462c0819:PsiDirectoryNode" />
-              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -531,7 +559,7 @@
       <workItem from="1538858860891" duration="1228000" />
       <workItem from="1539731417857" duration="353000" />
       <workItem from="1541539380791" duration="6558000" />
-      <workItem from="1542143016602" duration="4300000" />
+      <workItem from="1542143016602" duration="6680000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1537922238965</created>
@@ -596,11 +624,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541546440073</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Jociano">
+      <created>1542147460102</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542147460102</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Jociano">
+      <created>1542147475104</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542147475104</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36345000" />
+    <option name="totallyTimeSpent" value="38725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -690,13 +732,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Jociano" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -921,31 +956,10 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/noticias/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -963,34 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#39#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="30" column="93" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="99" selection-start-line="11" selection-start-column="99" selection-end-line="11" selection-end-column="99" />
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1004,10 +994,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/52feab7d5c145a7a5254eca5e255b2a9">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#39#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/painel/sobre/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#39#56#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
