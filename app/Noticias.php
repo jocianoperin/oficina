@@ -11,7 +11,4 @@ class Noticias extends Model{
 
 	protected $fillable = ['SobTexto'];
 
-
-
-
 }

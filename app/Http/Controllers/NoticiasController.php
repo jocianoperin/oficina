@@ -13,32 +13,26 @@ class NoticiasController extends Controller
 
     public function index()
     {
-        $itens_noticia = Noticias::where('SobLiberado', '=', 1)->paginate(15);
-        return view('painel.noticias.index', compact('itens_noticia'));
-
-    }
-
-
-    public function update()
-    {
-        $update = Noticias::find(Input::get('codigo'));
-
-        $update->SobTexto = Input::get('texto');
-
-        $update->save();
-
-        return redirect('painel/noticias')->with('success', 'Registro alterado com sucesso!');
+        $itens_noticia = Sobre::find(1);
+        return view('painel.noticias.create', compact('itens_noticia'));
     }
 
     public function create()
     {
-        $create = Noticias::find(Input::get('codigo'));
 
-        $create->SobTexto = Input::get('texto');
+        return view('painel.noticias.create');
+    }
 
-        $create->save();
+    public function update()
+    {
+        $update = Sobre::find(Input::get('codigo'));
 
-        return redirect('painel/noticias')->with('success', 'Registro alterado com sucesso!');
+        $update->SobTexto = Input::get('texto');
+        $update->SobPresidente = Input::get('presidente');
+
+        $update->save();
+
+        return redirect('painel/sobre')->with('success', 'Registro alterado com sucesso!');
     }
 
     public function destroy()

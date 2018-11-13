@@ -27,21 +27,23 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-expanded="false">Página Sobre <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="{{ url('/painel/sobre') }}"><i class="fa fa-wrench"></i> Configurações</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/sobre') }}"><i class="fa fa-wrench"></i> Configurações2</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-expanded="false">Página Notícias <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="{{ url('/painel/noticias') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/noticias') }}"><i class="fa fa-list"></i> Listar</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/noticias/create') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-expanded="false">Página Eventos <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="{{ url('/painel/eventos') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/eventos') }}"><i class="fa fa-list"></i> Listar</a></li>
+                            <li><a class="dropdown-item" href="{{ url('/painel/eventos/create') }}"><i class="fa fa-wrench"></i> Adicionar</a></li>
                         </ul>
                     </li>
                 @endif

@@ -29,4 +29,22 @@ class EventosController extends Controller
         return redirect('painel/eventos')->with('success', 'Registro alterado com sucesso!');
     }
 
+    public function create()
+    {
+        $create = Eventos::find(Input::get('codigo'));
+
+        $create->SobTexto = Input::get('texto');
+
+        $create->save();
+
+        return redirect('painel/eventos')->with('success', 'Registro alterado com sucesso!');
+    }
+
+    public function destroy()
+    {
+        Eventos::find(Input::get('id'))->delete();
+
+        return redirect('painel/eventos')->with('success', 'Registro excluido com sucesso!');
+    }
+
 }

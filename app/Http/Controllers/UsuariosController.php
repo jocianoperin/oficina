@@ -32,7 +32,6 @@ class UsuariosController extends Controller
         $create->email = Input::get('email');
         $create->password = Hash::make(Input::get('senha'));
 
-
         $create->save();
 
         return redirect('painel/usuarios')->with('success', 'Registro adicionado com sucesso!');

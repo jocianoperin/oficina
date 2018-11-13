@@ -16,7 +16,6 @@ class SobreController extends Controller
         return view('painel.sobre.index', compact('item_sobre'));
     }
 
-
     public function update()
     {
         $update = Sobre::find(Input::get('codigo'));
