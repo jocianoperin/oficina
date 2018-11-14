@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e840b3fb-ea2d-483c-8f02-4e5671642e3c" name="Default Changelist" comment="alteração">
-      <change afterPath="$PROJECT_DIR$/app/Eventos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Eventos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Eventos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/eventos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/eventos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/noticias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/noticias/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php" afterDir="false" />
     </list>
     <ignored path="C:\xampp\htdocs\Oficina\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -195,7 +189,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
+            <state relative-caret-position="153">
               <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
             </state>
           </provider>
@@ -204,17 +198,17 @@
       <file leaf-file-name="Eventos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Eventos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EventosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="218">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#39#55#0#PHP" expanded="true" />
               </folding>
@@ -225,8 +219,8 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="8" />
+            <state relative-caret-position="248">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -234,17 +228,17 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
+            <state relative-caret-position="272">
               <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/eventos/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="1768">
+              <caret line="104" column="95" selection-start-line="104" selection-start-column="95" selection-end-line="104" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -349,11 +343,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsuariosController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" />
         <option value="$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/eventos/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Eventos.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" />
-        <option value="$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/eventos/index.blade.php" />
       </list>
     </option>
   </component>
@@ -579,7 +573,8 @@
       <workItem from="1542228301780" duration="1720000" />
       <workItem from="1542230255171" duration="1792000" />
       <workItem from="1542232241947" duration="1773000" />
-      <workItem from="1542234195577" duration="337000" />
+      <workItem from="1542234195577" duration="1692000" />
+      <workItem from="1542236030535" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="teste">
       <created>1537922238965</created>
@@ -658,17 +653,31 @@
       <option name="project" value="LOCAL" />
       <updated>1542147475104</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="alteração">
+      <created>1542234638580</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542234638581</updated>
+    </task>
+    <task id="LOCAL-00013" summary="alteração">
+      <created>1542235038677</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542235038677</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46853000" />
+    <option name="totallyTimeSpent" value="48744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19818456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20121029" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
@@ -693,19 +702,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.24257426" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" weight="0.16044776" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.22125813" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.24257426" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.329718" />
@@ -759,7 +768,8 @@
     <MESSAGE value="teste" />
     <MESSAGE value="teste2" />
     <MESSAGE value="Jociano" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jociano" />
+    <MESSAGE value="alteração" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteração" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/views/includes/footer.blade.php">
@@ -972,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -1020,41 +1023,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Eventos.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/eventos/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#39#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="1768">
+          <caret line="104" column="95" selection-start-line="104" selection-start-column="95" selection-end-line="104" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/painel/eventos/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="8" />
+        <state relative-caret-position="248">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/painel/eventos/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
+        <state relative-caret-position="272">
           <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/eventos/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/painel/noticias/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Eventos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#39#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

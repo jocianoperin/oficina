@@ -9,6 +9,6 @@ class Eventos extends Model{
 	protected $table = 'teventos';
 	protected $primaryKey = 'SobCodigo';
 
-	protected $fillable = ['SobTexto','SobEvento'];
+	protected $fillable = ['SobTexto','SobEvento','SobArquivo'];
 
 }

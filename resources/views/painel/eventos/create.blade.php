@@ -24,6 +24,12 @@
                                         <label for="email">Texto</label>
                                         <input type="text" class="form-control" name="texto" placeholder="Texto" required>
                                     </div>
+
+                                        <div class="form-group">
+                                            <label for="arquivo">Arquivo</label>
+                                            <input type="file" class="form-control-file" name="arquivo">
+                                        </div>
+
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary"><i class="fa fa-save">&nbsp;</i>Salvar
                                         </button>

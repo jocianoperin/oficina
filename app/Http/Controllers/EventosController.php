@@ -42,6 +42,7 @@ class EventosController extends Controller
         $create = new Eventos();
         $create->SobTexto = Input::get('texto');
         $create->SobEvento = Input::get('evento');
+        $create->SobArquivo = Input::get('arquivo');
 
 
         $create->save();
