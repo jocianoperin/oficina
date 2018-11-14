@@ -26,7 +26,7 @@
             <section class="col-12 col-12-narrower">
                 <div class="row">
                     <div class="inner">
-                        <h1>Noticias</h1>
+                        <h1>Noticias </h1>
                         @foreach($itens_noticia as $noticia)
                             <br>
                             <br>
@@ -43,9 +43,10 @@
 
                     </div>
                 </div>
+            </section>
         </div>
     </div>
-    </section>
+
 
 
     @include("includes.footer")

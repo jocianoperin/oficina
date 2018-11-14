@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Eventos;
 use App\Sobre;
 use Input;
 
@@ -12,14 +13,15 @@ class EventosController extends Controller
 
     public function index()
     {
-        $item_sobre = Sobre::find(1);
-        return view('painel.eventos.index', compact('item_sobre'));
+        $itens = Eventos::paginate(15);
+
+        return view('painel.eventos.index', compact('itens'));
     }
 
 
     public function update()
     {
-        $update = Sobre::find(Input::get('codigo'));
+        $update = Eventos::find(Input::get('codigo'));
 
         $update->SobTexto = Input::get('texto');
         $update->SobPresidente = Input::get('presidente');
@@ -28,12 +30,19 @@ class EventosController extends Controller
 
         return redirect('painel/eventos')->with('success', 'Registro alterado com sucesso!');
     }
-
     public function create()
     {
-        $create = Eventos::find(Input::get('codigo'));
+        return view('painel.eventos.create');
+    }
 
+    public function create2()
+    {
+        /*$create = Eventos::find(Input::get('SubCodigo'));*/
+
+        $create = new Eventos();
         $create->SobTexto = Input::get('texto');
+        $create->SobEvento = Input::get('evento');
+
 
         $create->save();
 

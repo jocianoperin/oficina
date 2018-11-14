@@ -5,6 +5,6 @@
         <li><a href="noticias">Noticias</a></li>
         <li><a href="eventos">Eventos</a></li>
         <li><a href="contato">Contato</a></li>
-        
+
     </ul>
 </nav>

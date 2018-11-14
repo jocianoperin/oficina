@@ -18,45 +18,43 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-wrench"></i>
-                        Configurações da Página Eventos
+                        Usuários
                     </div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="header"> <strong>Informações da Página:</strong> </div>
-                                <hr class="center-block">
-                            </div>
-                            <div class="col-md-12">
-                                <form action="{{url('painel/sobre/update?codigo='.$item_sobre->SobCodigo)}}" method="POST">
-                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-
-                                    <div class="form-group">
-                                        <label for="texto">Presidente:</label>
-                                        <input type="text" class="form-control" name="presidente" value="{{$item_sobre->SobPresidente}}">
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="texto">Texto:</label>
-                                        <textarea id="texto" class="form-control" name="texto">
-                                            @if($item_sobre->SobTexto)
-                                                {{$item_sobre->SobTexto}}
-                                            @endif
-                                        </textarea>
-                                        <script>
-                                            CKEDITOR.replace( 'texto' );
-                                        </script>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i class="fa fa-save">&nbsp;</i>
-                                            Salvar
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="col-sm-1 text-center">#</th>
+                                <th class="col-sm-5">Codigo</th>
+                                <th class="col-sm-5">Texto</th>
+                                <th class="col-sm-5">Evento</th>
+                                <th class="col-sm-1 text-center">#</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @if(count(@$itens) > 0)
+                                @foreach($itens as $item)
+                                    <tr>
+                                        <td class="text-center" style="vertical-align: middle;">
+                                            <a href="{{url('painel/eventos/update?id='.$item->SobCodigo)}}" class="btn btn-primary">
+                                                <i class="fa fa-edit"></i>
+                                            </a>
+                                        </td>
+                                        <td style="vertical-align: middle;">{{$item->SobCodigo}}</td>
+                                        <td style="vertical-align: middle;">{{$item->SobTexto}}</td>
+                                        <td style="vertical-align: middle;">{{$item->SobEvento}}</td>
+                                        <td class="text-center" style="vertical-align: middle;">
+                                            <a href="{{url('painel/eventos/destroy?id='.$item->SobCodigo)}}" class="btn btn-danger btn-destroy">
+                                                <i class="fa fa-remove"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            @endif
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
             </div>
         </div>

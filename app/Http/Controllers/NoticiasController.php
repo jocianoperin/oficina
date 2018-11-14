@@ -12,8 +12,9 @@ class NoticiasController extends Controller
 
     public function index()
     {
-        $itens_noticia = Noticias::find(1);
-        return view('painel/noticias/index', compact('itens_noticia'));
+        $itens = Noticias::paginate(15);
+
+        return view('painel.noticias.index', compact('itens'));
     }
 
     public function create()

@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-sm-10 col-md-offset-1">
                 @if (session('success'))
                     <div class="alert alert-success">
                         {{ session('success') }}
@@ -14,23 +14,25 @@
                         {{ session('error') }}
                     </div>
                 @endif
+            </div>
+            <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Notícias
+                        Usuários
                     </div>
                     <div class="panel-body">
                         <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th class="col-sm-1 text-center">#</th>
-                                <th class="col-sm-5">Id</th>
-                                <th class="col-sm-5">Título</th>
+                                <th class="col-sm-5">Codigo</th>
+                                <th class="col-sm-5">Noticia</th>
                                 <th class="col-sm-1 text-center">#</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @if(count(@$itens_noticia) > 0)
-                                @foreach($itens_noticia as $item)
+                            @if(count(@$itens) > 0)
+                                @foreach($itens as $item)
                                     <tr>
                                         <td class="text-center" style="vertical-align: middle;">
                                             <a href="{{url('painel/noticias/update?id='.$item->SobCodigo)}}" class="btn btn-primary">
@@ -38,9 +40,9 @@
                                             </a>
                                         </td>
                                         <td style="vertical-align: middle;">{{$item->SobCodigo}}</td>
-                                        <td style="vertical-align: middle;">{{$item->SobTitulo}}</td>
+                                        <td style="vertical-align: middle;">{{$item->SobTexto}}</td>
                                         <td class="text-center" style="vertical-align: middle;">
-                                            <a href="{{url('painel/noticias/destroy?id='.$item->SobCodigo)}}" class="btn btn-danger">
+                                            <a href="{{url('painel/noticias/destroy?id='.$item->SobCodigo)}}" class="btn btn-danger btn-destroy">
                                                 <i class="fa fa-remove"></i>
                                             </a>
                                         </td>
@@ -50,9 +52,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="panel-footer">
-                        {!! $itens_noticia->render() !!}
-                    </div>
+
                 </div>
             </div>
         </div>
