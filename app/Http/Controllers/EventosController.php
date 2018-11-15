@@ -40,7 +40,7 @@ class EventosController extends Controller
         /*$create = Eventos::find(Input::get('SubCodigo'));*/
 
         $create = new Eventos();
-        $create->SobTexto = Input::get('texto');
+        $create->SobTexto = Input::get('descricao');
         $create->SobEvento = Input::get('evento');
         $create->SobArquivo = Input::get('arquivo');
 

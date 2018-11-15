@@ -12,18 +12,20 @@
                                 <form action="{{url('painel/eventos/create')}}" method="POST">
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                                     <div class="form-group">
-                                        <label for="email">Titulo</label>
+                                        <label for="titulo">Titulo</label>
                                         <input type="text" class="form-control" name="titulo" placeholder="Titulo" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="email">Evento</label>
+                                        <label for="evento">Evento</label>
                                         <input type="text" class="form-control" name="evento" placeholder="Eventos" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Texto</label>
-                                        <input type="text" class="form-control" name="texto" placeholder="Texto" required>
+                                        <label for="texto">Texto</label>
+                                        <input type="text" class="form-control" name="descricao" placeholder="Texto" required>
                                     </div>
+
+
 
                                         <div class="form-group">
                                             <label for="arquivo">Arquivo</label>
