@@ -34,7 +34,6 @@
                                         <label for="texto">Título:</label>
                                         <input id="titulo" type="text" class="form-control" name="presidente" value="">
                                     </div>
-                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
                                     <div class="form-group">
                                         <label for="texto">Texto:</label>
                                         <textarea id="texto" class="form-control" name="texto">

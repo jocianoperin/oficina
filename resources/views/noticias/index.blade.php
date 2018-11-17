@@ -36,6 +36,9 @@
                                 <div class="container-fluid">
                                     {{strip_tags($noticia->SobTexto)}}
                                 </div>
+                                <div class="image">
+                                    {{strip_tags($noticia->Img)}}
+                                </div>
                             </div>
 
                         @endforeach

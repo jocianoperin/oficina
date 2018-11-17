@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Noticias;
+use App\Services\Upload;
 use Input;
 
 class NoticiasController extends Controller
@@ -28,11 +29,12 @@ class NoticiasController extends Controller
     {
         $create = new Noticias();
 
-        $create->SobTitulo = Input::get('titulo');
+        $create->SobTitulo = Input::get('presidente');
         $create->SobTexto = Input::get('texto');
+
         $create->save();
 
-        return redirect('painel/noticias')->with('success', 'Registro adicionado com sucesso!');
+        return redirect('painel/')->with('success', 'Registro adicionado com sucesso!');
     }
 
     public function update()
@@ -52,6 +54,23 @@ class NoticiasController extends Controller
         Noticias::find(Input::get('id'))->delete();
 
         return redirect('painel/noticias')->with('success', 'Registro excluido com sucesso!');
+    }
+
+    public function upload2(Upload $upload){
+        if (Auth::user()->UserCodigo == Route::input('id_usu')) {
+            if (Input::hasFile('file')) {
+                $upload->resize(Input::file("file"), public_path() . "/upload/usuarios/avatar_"
+                    . Route::input('id_usu') . ".jpg", getenv("TamPW"), getenv("TamPH"));
+                return redirect(getenv("PAINEL"))->with("success", "Imagem enviada com
+sucesso!");
+            } else {
+                return redirect(getenv("PAINEL"))->with("error", "Imagem não enviada!");
+            }
+        } else {
+            return redirect(getenv("PAINEL") . "/")->with("error", "Você não tem autorização
+para acessar esta página");
+        }
+
     }
 
 }
