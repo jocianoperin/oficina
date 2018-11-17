@@ -44,6 +44,8 @@ class EventosController extends Controller
         $create->SobEvento = Input::get('evento');
         $create->SobArquivo = Input::get('arquivo');
 
+        
+
 
         $create->save();
 
