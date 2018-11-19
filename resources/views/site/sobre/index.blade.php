@@ -13,7 +13,7 @@
 
     <!-- Header -->
     <div id="header">
-
+        
         @include("site.includes.titulo")
         @include("site.includes.top")
         @include("site.includes.banner")
