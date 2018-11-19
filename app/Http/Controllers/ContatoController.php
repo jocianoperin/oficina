@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Contato;
+use Illuminate\Support\Facades\Mail;
 use Input;
 use Hash;
 use Auth;
@@ -14,9 +15,13 @@ class ContatoController extends Controller
 
     public function index()
     {
-//        $itens = Contato::paginate(15);
+        $itens = Contato::paginate(15);
+        return view('painel.contato.index', compact('itens'));
+    }
 
-//        return view('painel.contato.index', compact('itens'));
+    public function contato(){
+        $item = Contato::find(Input::get('id'));
+        return view('painel.contato.contato', compact('item'));
     }
 
     public function create()
@@ -28,49 +33,26 @@ class ContatoController extends Controller
     {
         $create = new Contato();
 
-        $create->name = Input::get('name');
-        $create->email = Input::get('email');
-        $create->object = Input::get('object');
-        $create->message = Input::get('message');
+        $create->ConNome = Input::get('nome');
+        $create->ConEmail = Input::get('email');
+        $create->ConAssunto = Input::get('assunto');
+        $create->ConMensagem = Input::get('mensagem');
 
         $create->save();
 
         Mail::send('emails.contato', compact('create'), function ($message) use ($create) {
 
-            $message->to('perinjociano@gmail.com')->subject('Contato vindo do site!');
+            $message->to('yurireisc@gmail.com')->subject('Contato vindo do site!');
         });
 
         return redirect('painel/contato')->with('success', 'Registro adicionado com sucesso!');
-    }
-
-    public function update()
-    {
-        $item = Contato::find(Input::get('id'));
-
-        return view('painel.contato.update', compact('item'));
-    }
-
-    public function update2()
-    {
-        $update = Contato::find(Input::get('id'));
-
-        $update->name = Input::get('name');
-        $update->email = Input::get('email');
-
-        if (Input::has('senha')) {
-            $update->password = Hash::make(Input::get('senha'));
-        }
-
-        $update->save();
-
-        return redirect('painel/contato')->with('success', 'Registro alterado com sucesso!');
     }
 
     public function destroy()
     {
         Contato::find(Input::get('id'))->delete();
 
-        return redirect('painel/contato')->with('success', 'Registro excluido com sucesso!');
+        return redirect('painel/contatos')->with('success', 'Registro excluido com sucesso!');
     }
 
 }

@@ -4,10 +4,11 @@
 Route::get('/', 'SiteController@index');
 Route::get('/home', 'SiteController@index');
 Route::get('/noticias', 'SiteController@noticias');
+Route::get('/noticia', 'SiteController@noticia');
 Route::get('/eventos', 'SiteController@eventos');
 Route::get('/sobre', 'SiteController@sobre');
 Route::get('/contato', 'SiteController@contato');
-Route::post('/contato', 'SiteController@contato2');
+Route::post('/contato', 'ContatoController@create2');
 
 
 Route::controllers([
@@ -28,12 +29,12 @@ Route::group(['prefix' => 'painel', 'middleware' => 'auth'], function () {
         Route::get('destroy', 'UsuariosController@destroy');
     });
 
-    Route::group(['prefix' => 'contato'], function () {
+
+    Route::group(['prefix' => 'contatos'], function () {
         Route::get('/', 'ContatoController@index');
         Route::get('create', 'ContatoController@create');
+        Route::get('contato', 'ContatoController@contato');
         Route::post('create', 'ContatoController@create2');
-        Route::get('update', 'ContatoController@update');
-        Route::post('update', 'ContatoController@update2');
         Route::get('destroy', 'ContatoController@destroy');
     });
 

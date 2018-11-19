@@ -21,13 +21,14 @@
                         Usuários
                     </div>
                     <div class="panel-body">
+                        <a href="{{url('painel/usuarios/create')}}" style="margin-bottom:2%;" class="btn btn-md btn-primary"><i class="fa fa-plus"></i> Adicionar Usuario</a>
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th class="col-sm-1 text-center">#</th>
+                                <th class="col-sm-1 text-center"><i class="fa fa-wrench"></i></th>
                                 <th class="col-sm-5">Nome</th>
                                 <th class="col-sm-5">E-mail</th>
-                                <th class="col-sm-1 text-center">#</th>
+                                <th class="col-sm-1 text-center"><i class="fa fa-trash"></i></th>
                             </tr>
                             </thead>
                             <tbody>

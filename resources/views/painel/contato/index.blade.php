@@ -24,7 +24,6 @@
                         <table class="table table-bordered">
                             <thead>
                             <tr>
-                                <th class="col-sm-1 text-center">#</th>
                                 <th class="col-sm-5">Nome</th>
                                 <th class="col-sm-5">E-mail</th>
                                 <th class="col-sm-5">Assunto</th>
@@ -36,17 +35,12 @@
                             @if(count(@$itens) > 0)
                                 @foreach($itens as $item)
                                     <tr>
+                                        <td style="vertical-align: middle;">{{$item->ConNome}}</td>
+                                        <td style="vertical-align: middle;">{{$item->ConEmail}}</td>
+                                        <td style="vertical-align: middle;">{{$item->ConAssunto}}</td>
+                                        <td style="vertical-align: middle;"><a href="{{url('painel/contatos/contato/?id='.$item->ConCodigo)}}">Ver Mensagem</a></td>
                                         <td class="text-center" style="vertical-align: middle;">
-                                            <a href="{{url('painel/contato/update?id='.$item->id)}}" class="btn btn-primary">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                        </td>
-                                        <td style="vertical-align: middle;">{{$item->name}}</td>
-                                        <td style="vertical-align: middle;">{{$item->email}}</td>
-                                        <td style="vertical-align: middle;">{{$item->object}}</td>
-                                        <td style="vertical-align: middle;">{{$item->message}}</td>
-                                        <td class="text-center" style="vertical-align: middle;">
-                                            <a href="{{url('painel/contato/destroy?id='.$item->id)}}" class="btn btn-danger btn-destroy">
+                                            <a href="{{url('painel/contatos/destroy?id='.$item->ConCodigo)}}" class="btn btn-danger btn-destroy">
                                                 <i class="fa fa-remove"></i>
                                             </a>
                                         </td>

@@ -5,13 +5,11 @@
     <!-- Header -->
     <div id="header">
 
-        @include("includes.titulo")
-        @include("includes.top")
-        @include("includes.banner")
+        @include("site.includes.titulo")
+        @include("site.includes.top")
+        @include("site.includes.banner")
 
     </div>
-
-
 
     <!--
     <section class="wrapper style1">
@@ -114,7 +112,7 @@
         </div>
     </section>-->
 
-    @include("includes.footer")
+    @include("site.includes.footer")
 
     </div>
 

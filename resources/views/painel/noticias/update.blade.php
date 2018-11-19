@@ -1,5 +1,4 @@
 @extends('painel.app')
-
 @section('content')
     <div class="container">
         <div class="row">
@@ -9,26 +8,24 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-12">
-                                <form action="{{url('painel/noticias/update?codigo='.$item_sobre->SobCodigo)}}" method="POST">
+                                <form action="{{url('painel/noticias/update?codigo='.$item->NotCodigo)}}" method="POST">
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
-
                                     <div class="form-group">
-                                        <label for="texto">Presidente:</label>
-                                        <input type="text" class="form-control" name="presidente" value="{{$item_sobre->SobPresidente}}">
-
+                                        <label for="titulo">Título:</label>
+                                        <input id="titulo" type="text" class="form-control" name="titulo" value="{{$item->NotTitulo}}">
                                     </div>
-
                                     <div class="form-group">
                                         <label for="texto">Texto:</label>
                                         <textarea id="texto" class="form-control" name="texto">
-                                            @if($item_sobre->SobTexto)
-                                                {{$item_sobre->SobTexto}}
-                                            @endif
+                                            {{$item->NotTexto}}
                                         </textarea>
-                                        <script>
-                                            CKEDITOR.replace( 'texto' );
-                                        </script>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="liberado">Liberado:</label>
+                                        <input id="liberado" {{$item->NotLiberado == 1 ? 'checked' : ''}} type="radio" class="" name="liberado" value="1"> Sim
+                                        <input id="liberado" {{$item->NotLiberado == 0 ? 'checked' : ''}} type="radio" class="" style="margin-left:2%;" name="liberado" value="0"> Não
+                                    </div>
+                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary"><i class="fa fa-save">&nbsp;</i>
                                             Salvar

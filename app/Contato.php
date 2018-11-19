@@ -8,7 +8,7 @@ class Contato extends Model
 
     use SoftDeletes;
 
-    protected $table = 'contato';
-    protected $primaryKey = 'id';
+    protected $table = 'tcontatos';
+    protected $primaryKey = 'ConCodigo';
     protected $dates = ['deleted_at'];
 }

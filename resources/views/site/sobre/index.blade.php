@@ -14,9 +14,9 @@
     <!-- Header -->
     <div id="header">
 
-        @include("includes.titulo")
-        @include("includes.top")
-        @include("includes.banner")
+        @include("site.includes.titulo")
+        @include("site.includes.top")
+        @include("site.includes.banner")
 
 
     </div>
@@ -27,25 +27,24 @@
             <section class="col-12 col-12-narrower">
                 <div class="row">
                     <div class="inner">
-                        <h3>Sobre a Comissão de Cultura da UTFPR-DV</h3>
+                        <h1>Sobre a Comissão de Cultura da UTFPR-DV</h1>
                         <p>{{strip_tags($sobre->SobTexto)}}</p>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top:5%;">
                     <div class="inner">
-                        <h4>Membros: </h4>
+                        <h3>Membros da Comissão: </h3>
                         <p><strong>Presidente: {{$sobre->SobPresidente}}</strong></p>
                     </div>
                 </div>
-
-
+            </section>
         </div>
     </div>
-    </section>
 
 
-    @include("includes.footer")
+
+    @include("site.includes.footer")
 
 </div>
 
