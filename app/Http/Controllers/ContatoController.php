@@ -35,8 +35,8 @@ class ContatoController extends Controller
 
         $create->ConNome = Input::get('nome');
         $create->ConEmail = Input::get('email');
-        $create->ConAssunto = Input::get('assunto');
-        $create->ConMensagem = Input::get('mensagem');
+        $create->ConAssunto = Input::get('object');
+        $create->ConMensagem = Input::get('message');
 
         $create->save();
 

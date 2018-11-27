@@ -30,7 +30,7 @@
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="row gtr-50">
                         <div class="col-6 col-12-mobilep">
-                            <input type="text" name="name" id="name" placeholder="Nome"/>
+                            <input type="text" name="nome" id="nome" placeholder="Nome"/>
                         </div>
                         <div class="col-6 col-12-mobilep">
                             <input type="email" name="email" id="email" placeholder="Email"/>
